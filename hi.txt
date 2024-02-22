@@ -1,2 +1,0 @@
-building zk-SNARK authentication 
-using ZoKrates
