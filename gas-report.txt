@@ -1,0 +1,22 @@
+No files changed, compilation skipped
+
+Running 3 tests for test/zkSNARKAuth.t.sol:zkSNARKAuthTest
+[32m[PASS][0m testFuzz_SetNumber(uint256) (runs: 256, μ: 27321, ~: 28410)
+[32m[PASS][0m test_Increment() (gas: 28436)
+[32m[PASS][0m test_verifyTx() (gas: 497210)
+Test result: [32mok[0m. [32m3[0m passed; [31m0[0m failed; [33m0[0m skipped; finished in 20.02ms
+| src/zkSNARKAuth.sol:zkSNARKAuth contract |                 |        |        |        |         |
+|------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                          | Deployment Size |        |        |        |         |
+| 1032674                                  | 5190            |        |        |        |         |
+| Function Name                            | min             | avg    | median | max    | # calls |
+| genProof                                 | 3866            | 3866   | 3866   | 3866   | 2       |
+| increment                                | 22396           | 22396  | 22396  | 22396  | 1       |
+| number                                   | 284             | 284    | 284    | 284    | 2       |
+| setNumber                                | 2390            | 7365   | 2390   | 22290  | 4       |
+| verifyTx                                 | 237253          | 237253 | 237253 | 237253 | 2       |
+
+
+
+ 
+Ran 1 test suites: [32m3[0m tests passed, [31m0[0m failed, [33m0[0m skipped (3 total tests)
