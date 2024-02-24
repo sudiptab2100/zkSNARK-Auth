@@ -28,19 +28,19 @@ def zokIp(password: str, count: int):
     
     op = dict()
     op["password"] = password
-    op["a"] = a
-    op["b"] = b
-    op["c"] = c
-    op["k"] = k
+    op["a"] = str(a)
+    op["b"] = str(b)
+    op["c"] = str(c)
+    op["k"] = str(k)
     
     print(f"a: {a}\nb: {b}\nc: {c}\nk: {k}\n")
     v1, v2 = hash_gen(a, b, c, 0)
-    op["h"] = [v1, v2]
+    op["h"] = [str(v1), str(v2)]
     print(f"sha256([a, b, c, 0]) =>\n  {v1}\n  {v2}\n")
     
     v1, v2 = hash_gen(a, b, c, k)
     print(f"sha256([a, b, c, k]) =>\n  {v1}\n  {v2}\n")
-    op["hh"] = [v1, v2]
+    op["hh"] = [str(v1), str(v2)]
     
     with open("hash_data.json", "w") as f:
         json.dump(op, f, indent=4)
